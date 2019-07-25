@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://devx3:devx3@devconnector-hvqfx.mongodb.net/test?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://devx3:devx3@devconnector-hvqfx.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "DuffMetrics"
 }
