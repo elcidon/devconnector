@@ -242,10 +242,10 @@ router.put(
 
 router.delete("/experience/:exp_id", auth, async (req, res) => {
   try {
-    // TODO: get profile
+    // get profile
     const profile = await Profile.findOne({ user: req.user.id });
 
-    // TODO Get the correct experience to delete
+    // Get the correct experience to delete
     const removeIndex = profile.experience
       .map(item => item.id)
       .indexOf(req.params.exp_id);
@@ -255,7 +255,7 @@ router.delete("/experience/:exp_id", auth, async (req, res) => {
 
     res.status(200).json(profile);
 
-    // TODO Destroy it
+    // Destroy it
   } catch (error) {
     console.log(error.message);
     res.status(500).send("Server error.");
@@ -335,10 +335,10 @@ router.put(
  */
 router.delete("/education/:edu_id", auth, async (req, res) => {
   try {
-    // TODO: get profile
+    // get profile
     const profile = await Profile.findOne({ user: req.user.id });
 
-    // TODO Get the correct education to delete
+    // Get the correct education to delete
     const removeIndex = profile.education
       .map(item => item.id)
       .indexOf(req.params.edu_id);
@@ -348,7 +348,7 @@ router.delete("/education/:edu_id", auth, async (req, res) => {
 
     res.status(200).json(profile);
 
-    // TODO Destroy it
+    // Destroy it
   } catch (error) {
     console.log(error.message);
     res.status(500).send("Server error.");
