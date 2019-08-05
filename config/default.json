@@ -1,4 +1,6 @@
 {
   "mongoURI": "mongodb+srv://devx3:devx3@devconnector-hvqfx.mongodb.net/test?retryWrites=true&w=majority",
-  "jwtSecret": "DuffMetrics"
+  "jwtSecret": "DuffMetrics",
+  "githubClientId": "6e226d4d5752d4a1b9d6",
+  "githubSecret": "bcb9d91e64a2557780d68452f0b624a4d69ca936"
 }

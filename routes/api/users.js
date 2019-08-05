@@ -37,7 +37,9 @@ router.post("/", userValidation, async (req, res) => {
     let user = await User.findOne({ email });
     // See if user exists
     if (user) {
-      return res.status(400).json({ errors: { msg: "User already exists!" } });
+      return res
+        .status(400)
+        .json({ errors: [{ msg: "User already exists!" }] });
     }
 
     // Get User Gravatar
